@@ -1,0 +1,7 @@
+---
+
+- name: Ensure YUM is updated
+  yum: name="*" state=latest
+
+- name: Ensure Development Tools are installed
+  yum: name="@Development tools" state=present
